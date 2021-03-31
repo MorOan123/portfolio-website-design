@@ -1,0 +1,808 @@
+*{
+box-sizing:border-box;
+font-family:'Fira Sans',sans-serif  ;
+}
+
+body { 
+margin: 0;
+
+}
+
+
+.hr-style{
+border:5px dotted;
+border-bottom:none ;
+width:70px;
+
+
+}
+
+h1{ 
+font-size:2.5rem;
+text-align:center;
+
+
+}
+
+
+
+
+p { 
+    
+  font-size:1.2rem;
+  text-align:justify;
+
+
+}
+
+/* navbar starts here*/
+
+[class*="col-"]{
+float: left;
+padding:10px;
+
+
+}
+
+/*for Mobile*/
+
+[class*="col-"]{
+ width:100% ;
+ 
+}
+
+
+
+
+
+
+a{ 
+
+color:white;
+font-size:1.2rem;
+text-decoration:none;
+
+}
+
+
+.navbar{
+
+background-color: #0c6168;
+text-align:center;
+padding:1% 7% ;
+
+}
+
+
+.navbar::after{
+  content:'';
+  display:table ;
+  clear:both;
+
+
+}
+
+.navbar h1{
+color:white ;
+padding-top:10px ;
+
+}
+
+.navbar-menu{
+display: flex;
+flex-direction:column;
+text-transform:uppercase;
+
+
+
+}
+
+.navbar-menu a{
+
+margin: 10px ;
+padding:10px; ;
+background-color:#40868b;
+border-radius:10px;
+
+
+
+}
+
+.navbar-menu a:hover{
+
+background-color:gray;
+
+}
+
+/*navbar ends here */
+
+
+
+
+
+/* profile starts here*/
+
+.profile{
+padding:170px 10px;
+position:relative ;
+text-align:center;
+
+}
+
+
+.profile .top-image{
+position:absolute ;
+width:150px;
+top:10px;
+right:60px;
+transition:transform 2s;
+
+
+}
+
+.profile .top-image:hover{
+    transform: scale(1.1) rotate(360deg);
+    
+
+}
+
+
+
+
+.profile .bottom-image{
+position:absolute;
+width:150px;
+bottom:5px;
+left:60px;
+transition:transform 2s;
+
+
+}
+
+.profile .bottom-image:hover{
+    transform: scale(1.1) rotate(360deg);
+    
+
+}
+
+.profile-desc h1{
+font-family:'satisfy',cursive;
+font-size:3rem;
+
+
+
+}
+
+
+.profile-desc p{
+color:Gray;
+text-align:center;
+margin: 0 auto 20px 0;
+
+
+
+
+
+}
+
+
+
+.profile::after{
+  content:'';
+  display:table ;
+  clear:both;
+
+
+}
+
+
+
+
+
+
+
+
+
+
+
+
+/* profile ends here*/
+
+
+
+
+
+
+
+/* about me starts here*/
+.about-me{
+padding:1% 7%;
+text-align:center;
+background-color:#fff5f0;
+font-family:'montserrat',sans-serif ;
+font-size:1.1rem;
+
+
+
+
+
+
+
+}
+
+.about-me h2{
+font-size:2rem;
+text-transform:uppercase ;
+
+}
+
+
+.aboutme-img img{
+width:180px;
+border-radius:50%;
+
+
+}
+
+
+
+.about-me::after{
+  content:'';
+  display:table ;
+  clear:both;
+
+
+}
+
+.aboutme-desc a{
+color:black;
+
+}
+
+
+
+.aboutme-desc a:hover {
+color:green;
+
+}
+
+.aboutme-img{
+margin:20px auto;
+
+
+}
+
+.cv-button { 
+background-color:#0f2d2f;
+color:white;
+border-radius:10px;
+border:none;
+padding:15px ;
+text-align:center;
+cursor: pointer;
+
+
+
+
+
+}
+
+
+
+
+
+
+
+
+
+
+/* about me ends here*/
+
+
+
+
+/* skill section starts here*/
+.professional-experience{
+padding: 1% 0%;
+
+
+
+}
+
+
+
+.professional-experience .card{
+background-color: #a39e9e;
+border-radius:10px;
+padding:10px ;
+text-align: center;
+transition:.4s;
+
+
+
+
+}
+
+
+.professional-experience .card:hover{
+
+box-shadow:0px 4px 10px black;
+
+}
+
+.card-icon img{
+border-radius:50%;
+padding: 5px;
+width: 150px;
+
+
+}
+
+.card-title{
+background-color: gray;
+border: none ;
+border-radius:5px;
+color:white;
+padding: 10px;
+
+}
+
+
+.skill-container{
+padding-right:45px ;
+
+
+}
+
+
+.skill-container li{
+list-style:none ;
+font-weight:bolder;
+text-transform:uppercase;
+text-align:left ;
+margin:30px 10px ;
+position:relative ;
+
+
+
+}
+
+
+.skill-container li::before{
+content: '';
+position:absolute ;
+top: calc(100% + 5px);
+background-color:rgb(86,86,153,0.5) ;
+width:100%;
+height:10px ;
+left:0;
+border-radius:1000px;
+
+
+}
+
+
+
+
+.skill-container li::after{
+content: '';
+position:absolute ;
+top: calc(100% + 5px);
+background-color:rgb(86,86,153,1) ;
+width:0;
+height:10px ;
+left:0;
+border-radius:1000px;
+
+
+
+animation-duration:2s;
+animarion-delay:1s;
+animation-timing-function:linear;
+animation-iteration-count:Infinite;
+animation-fill-mode:forwards;
+
+
+
+
+
+}
+
+.skill-container li.html::after{
+animation-name:html;
+
+
+}
+
+@keyframes html{
+
+to{
+width:90%;
+
+
+}
+
+
+}
+
+
+
+.skill-container li.html::after{
+animation-name:html;
+
+
+}
+
+@keyframes html{
+
+to{
+width:90%;
+
+
+}
+
+
+}
+
+
+.skill-container li.html::after{
+animation-name:html;
+
+
+}
+
+@keyframes html{
+
+to{
+width:90%;
+
+
+}
+
+
+}
+
+
+.skill-container li.css::after{
+animation-name:css;
+
+
+}
+
+@keyframes css{
+
+to{
+width:85%;
+
+
+}
+
+
+}
+
+
+.skill-container li.Js::after{
+animation-name:Js;
+
+
+}
+
+@keyframes Js{
+
+to{
+width:95%;
+
+
+}
+
+
+}
+
+
+.skill-container li.bootstrap::after{
+animation-name:bootstrap;
+
+
+}
+
+@keyframes bootstrap{
+
+to{
+width:90%;
+
+
+}
+
+
+}
+
+
+
+.skill-container li.jequery::after{
+animation-name:jequery;
+
+
+}
+
+@keyframes jequery{
+
+to{
+width:80%;
+
+
+}
+
+
+}
+
+
+
+.skill-container li.Cplus::after{
+animation-name:Cplus;
+
+
+}
+
+@keyframes Cplus{
+
+to{
+width:75%;
+
+
+}
+
+
+}
+
+
+
+.skill-container li.C++::after{
+animation-name:C++;
+
+
+}
+
+@keyframes C++{
+
+to{
+width:90%;
+
+
+}
+
+
+}
+
+
+
+.skill-container li.React::after{
+animation-name:React;
+
+
+}
+
+@keyframes React{
+
+to{
+width:90%;
+
+
+}
+
+
+}
+
+.skill-container li.node-js::after{
+animation-name:node-js;
+
+
+}
+
+@keyframes node-js{
+
+to{
+width:90%;
+
+
+}
+
+
+}
+
+
+
+.skill-container li.c::after{
+animation-name:c;
+
+
+}
+
+@keyframes c{
+
+to{
+width:95%;
+
+
+}
+
+
+}
+
+
+
+
+
+
+
+
+
+
+.professional-experience::after{
+content:'' ;
+display:table ;
+clear:both;
+
+
+}
+
+
+
+
+/* skill section ends here*/
+
+
+
+
+
+/* achievement contact starts here*/
+
+
+.achievement-contact{
+padding:1% 7%;
+background-color:#39a4ac;
+color:white;
+text-align:center;
+
+}
+
+
+.contact{
+padding: 1% 7%;
+text-align:center;
+
+}
+
+
+.contact input, textarea { 
+text-align: center;
+width:100%;
+padding:10px ;
+border: none;
+border-radius:5px;
+font-size:1rem;
+resize:none;
+
+
+
+}
+
+
+.contact button {
+border: none ;
+border-radius:10px;
+background-color:#052d2f ;
+color:white ;
+padding:15px ;
+margin: 10px;
+width: 100px;
+
+
+ }
+ 
+ 
+.contact-links {
+text-align:center ;
+
+
+
+}
+
+.social-icons .btn{
+border:none ;
+border-radius:25px;
+padding:10px ;
+margin:10px ;
+background-color:white ;
+width: 50px;
+font-size:32px;
+cursor:pointer ;
+
+}
+.btn:hover{
+background-color:gray ;
+
+}
+
+
+
+.achievement-contact::after{
+content:'' ;
+display:table ;
+clear:both;
+
+
+}
+
+
+
+
+
+/* achievement contact ends here*/
+
+
+
+
+
+/*footer starts here*/
+
+footer{
+background-color:black ;
+padding:20px ;
+font-size:0.8rem;
+text-align:center;
+color:white ;
+
+
+
+}
+
+.footer-menu a {
+display: block;
+margin: 10px;
+padding:10px ;
+
+
+}
+
+.footer-menu a:hover {
+color:grey ;
+
+}
+
+
+
+
+
+footer::after{
+content:"" ;
+display: table;
+clear: both;
+
+
+}
+
+.footer-desc p{
+font-size:1rem;
+text-align: justify;
+
+}
+
+
+
+
+
+/*footer ends here*/
+
+
+
+
+
+
+
+
+
+
+
+
+
+
